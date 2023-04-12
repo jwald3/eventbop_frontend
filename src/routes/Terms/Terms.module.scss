@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables";
+
+.tosContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $appBg;
+    color: $subtitle;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.tosContent {
+    flex: 1;
+    padding: 3rem 2rem 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.tosTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tosSubtitle {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.tosText {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}

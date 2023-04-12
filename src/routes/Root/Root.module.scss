@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables";
+
+.rootWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $appBg;
+    color: $subtitle;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.space {
+    height: 5rem;
+}

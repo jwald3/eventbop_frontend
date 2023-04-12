@@ -1,0 +1,50 @@
+.seeAllBubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.content {
+    height: 15vw;
+    width: 15vw;
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2c3036;
+    border: 2px solid #3f434b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid #e0e5ea;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #e0e5ea;
+}
+
+a {
+    text-decoration: none;
+    color: #b8c0cd;
+}

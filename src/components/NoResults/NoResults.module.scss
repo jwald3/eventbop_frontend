@@ -1,0 +1,10 @@
+@import "../../assets/styles/variables";
+
+.noResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: $subtitle;
+    padding: 1rem;
+}

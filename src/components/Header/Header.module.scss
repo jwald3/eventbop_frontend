@@ -1,0 +1,48 @@
+@import "../../assets/styles/variables";
+
+$header-bg: $primary; // Change the background color to the primary color.
+$button-outline: $text;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #283142, #3a4357);
+    color: $text;
+    padding: 1rem;
+    padding-right: 2rem; // Add padding to the right side of the header.
+}
+
+.leftSection {
+    flex: 3;
+}
+
+.rightSection {
+    flex: 2;
+}
+
+.title {
+    color: $text;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #b8c0cd;
+}
+
+// .loginButton {
+//     background-color: $header-bg; // Set the background color to the header background color.
+//     color: $text;
+//     border: 2px solid $subtitle; // Add an outline to the button.
+//     padding: 0.5rem 1rem;
+//     cursor: pointer;
+//     transition: all 0.3s;
+//     border-radius: 0.5rem;
+//     font-weight: 600;
+
+//     &:hover {
+//         background-color: $subtitle; // Change the background color on hover.
+//         color: $header-bg; // Change the text color on hover.
+//     }
+// }

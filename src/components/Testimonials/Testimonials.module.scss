@@ -1,0 +1,21 @@
+@import "../../assets/styles/variables";
+
+.testimonialsContainer {
+    padding: 2rem;
+    background-color: $appBg;
+    color: #b8c0cd;
+    text-align: center;
+}
+
+.testimonialsTitle {
+    font-size: 2rem;
+    margin-bottom: 3%;
+    color: $text;
+}
+
+.testimonialsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%;
+}

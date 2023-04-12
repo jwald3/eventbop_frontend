@@ -1,0 +1,20 @@
+@import "../../assets/styles/variables";
+
+.errorPage {
+    background-color: $appBg;
+    color: $text;
+
+    .errorContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        p {
+            &.errorStatus {
+                font-style: italic;
+            }
+        }
+    }
+}

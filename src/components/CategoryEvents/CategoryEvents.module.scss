@@ -1,0 +1,9 @@
+.eventTray {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
+    width: 80%;
+    padding: 0 1rem;
+}

@@ -1,0 +1,74 @@
+@import "../../components/Header/Header.module.scss";
+@import "../../assets/styles/variables";
+
+.appContainer {
+    background-color: $appBg;
+    min-height: 100vh;
+}
+
+.eventDetails {
+    font-family: "Arial", sans-serif;
+}
+
+.eventImageSection {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    // background-color: darken($app-bg, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    padding: 2rem;
+    color: $text;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .eventInfo {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.eventContent {
+    padding: 2rem;
+    background-color: $appBg;
+    color: $text;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: $text;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+        color: $subtitle;
+    }
+}

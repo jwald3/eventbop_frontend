@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $appBg;
+    color: #b8c0cd;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.aboutContent {
+    flex: 1;
+    padding: 3rem 2rem 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.aboutTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.aboutText {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}

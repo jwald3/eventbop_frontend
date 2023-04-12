@@ -1,0 +1,21 @@
+@import "../../assets/styles/variables";
+
+.categoriesPage {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $appBg;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.categoriesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 5rem;
+    max-width: 1200px;
+    width: 90%;
+    align-items: start;
+}

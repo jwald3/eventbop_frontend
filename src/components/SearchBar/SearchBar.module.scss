@@ -1,0 +1,57 @@
+@import "../../assets/styles/variables";
+
+.searchBar {
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    width: 80%;
+}
+
+.searchBar input {
+    width: 100%;
+    background-color: $primary;
+    border: 1px solid $subtitle;
+    color: $text;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+}
+
+.searchResults {
+    position: absolute;
+    background-color: $primary;
+    border: 1px solid $subtitle;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+
+    // Custom scrollbar styles
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $primary;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $secondary;
+        border-radius: 5px;
+    }
+}
+
+.searchResult {
+    display: block; // Added to display search results vertically
+    width: 100%; // Added to make search results take up the full width
+    padding: 8px;
+    cursor: pointer;
+    color: $text;
+    text-decoration: none; // Remove the default link decoration
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
