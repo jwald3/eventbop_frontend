@@ -7,12 +7,12 @@ import CategoryEvents from '../../components/CategoryEvents/CategoryEvents'
 import Footer from '../../components/Footer/Footer'
 
 export async function getCategory(category) {
-  const response = await axios.get(`http://localhost:8000/api/entertainmentapp/categories/${category}`);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/categories/${category}`);
   return response.data ?? null;
 }
 
 export async function getEventsForCategory(category) {
-    const response = await axios.get(`http://localhost:8000/api/entertainmentapp/events/?category=${category}`);
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/events/?category=${category}`);
     return response.data ?? null;
 }
 

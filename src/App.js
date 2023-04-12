@@ -3,7 +3,7 @@ import LoginForm from "./components/LoginForm";
 
 const App = () => {
     const handleLogin = async (username, password) => {
-        const url = "http://localhost:8000/api/entertainmentapp/login/";
+        const url = `${process.env.REACT_APP_API_URL}/login/`;
 
         try {
             const response = await fetch(url, {

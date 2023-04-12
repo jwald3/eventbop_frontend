@@ -8,9 +8,9 @@ const SearchBar = () => {
   const [results, setResults] = useState([]);
 
   const fetchSearchResults = async (searchTerm) => {
-    const locations = `http://localhost:8000/api/entertainmentapp/locations/?search=${searchTerm}`;
-    const events = `http://localhost:8000/api/entertainmentapp/events/?search=${searchTerm}`;
-    const categories = `http://localhost:8000/api/entertainmentapp/categories/?search=${searchTerm}`;
+    const locations = `${process.env.REACT_APP_API_URL}/locations/?search=${searchTerm}`;
+    const events = `${process.env.REACT_APP_API_URL}/events/?search=${searchTerm}`;
+    const categories = `${process.env.REACT_APP_API_URL}/categories/?search=${searchTerm}`;
 
     const promises = [
       axios.get(locations),

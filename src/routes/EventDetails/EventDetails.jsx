@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
 export async function getEventDetails(id) {
-  const response = await axios.get(`http://localhost:8000/api/entertainmentapp/events/${id}`);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/events/${id}`);
   return response.data ?? null;
 }
 export async function loader({ params }) {

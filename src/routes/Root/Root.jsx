@@ -10,12 +10,12 @@ import { useLoaderData } from 'react-router-dom';
 
 
 export async function getEvents() {
-  const response = await axios.get(`http://localhost:8000/api/entertainmentapp/events`);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/events`);
   return response.data ?? null;
 }
 
 export async function getVenues() {
-    const response = await axios.get(`http://localhost:8000/api/entertainmentapp/locations`);
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/locations`);
     return response.data ?? null;
 }
 

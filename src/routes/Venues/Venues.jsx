@@ -8,7 +8,7 @@ import NoResults from '../../components/NoResults/NoResults';
 import { useLoaderData } from 'react-router-dom';
 
 export async function getVenues() {
-  const response = await axios.get(`http://localhost:8000/api/entertainmentapp/locations`);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/locations`);
   return response.data ?? null;
 }
 export async function loader() {
