@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import styles from './Terms.module.scss';
 
 const Terms = () => {
+    useEffect(() => {
+        document.title = `EventBop — Terms of Service` 
+    }, [])
+
     return (
         <div className={styles.tosContainer}>
             <Header />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios';
 import Header from '../../components/Header/Header';
 import styles from './Venues.module.scss'
@@ -18,6 +18,10 @@ export async function loader() {
 
 const Venues = () => {
     const { venues } = useLoaderData();
+
+    useEffect(() => {
+        document.title = `EventBop — All Venues` 
+    }, [])
 
     return (
         <div>

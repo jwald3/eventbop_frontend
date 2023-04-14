@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './EventDetails.module.scss';
 import { useLoaderData } from "react-router-dom";
 import axios from 'axios';
@@ -26,7 +26,13 @@ const EventDetails = () => {
         minute: '2-digit',
     });
 
+    useEffect(() => {
+        document.title = `EventBop — ${event.title}` 
+    }, [])
+
     return (
+        
+
         <div className={styles.appContainer}>
         <Header />
         <div className={styles.eventDetails}>

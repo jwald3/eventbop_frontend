@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -10,8 +10,8 @@ import { useLoaderData } from 'react-router-dom';
 
 
 export async function getEvents() {
-  const response = await axios.get(`${process.env.REACT_APP_API_URL}/events`);
-  return response.data ?? null;
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/events`);
+    return response.data ?? null;
 }
 
 export async function getVenues() {
@@ -20,14 +20,18 @@ export async function getVenues() {
 }
 
 export async function loader() {
-  const events = await getEvents();
-  const venues = await getVenues();
+    const events = await getEvents();
+    const venues = await getVenues();
 
-  return { events, venues };
+    return { events, venues };
 }
 
 const Root = () => {
     const { events, venues } = useLoaderData();
+
+    useEffect(() => {
+        document.title = "EventBop — Home"
+    }, [])
 
     return (
         <div className={styles.rootWrapper}>

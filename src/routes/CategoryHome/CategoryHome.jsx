@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header';
 import styles from '../CategoryHome/CategoryHome.module.scss';
 import CategoryEvents from '../../components/CategoryEvents/CategoryEvents'
 import Footer from '../../components/Footer/Footer'
+import { useEffect } from 'react';
 
 export async function getCategory(category) {
   const response = await axios.get(`${process.env.REACT_APP_API_URL}/categories/${category}`);
@@ -24,6 +25,10 @@ export async function loader({ params }) {
 
 const CategoryHome = () => {
     const { category, events } = useLoaderData();
+
+    useEffect(() => {
+        document.title = `EventBop — ${category.title}` 
+    }, [])
 
     return (
          <div>

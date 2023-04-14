@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './Testimonials.module.scss';
 import Testimonial from '../Testimonial/Testimonial';
+import johnDoeImg from '../../assets/images/john-doe.jpg';
+import maryJohnsonImg from '../../assets/images/mary-johnson.jpg'
+import janeSmithImg from '../../assets/images/jane-smith.jpg'
 
 const Testimonials = () => {
     const testimonialData = [
@@ -8,19 +11,19 @@ const Testimonials = () => {
             id: 1,
             name: "John Doe",
             review: "EventBop is an amazing app! I've discovered so many great events and venues through it.",
-            imageUrl: "https://randomuser.me/api/portraits/thumb/men/75.jpg",
+            imageUrl: johnDoeImg
         },
         {
             id: 2,
             name: "Jane Smith",
             review: "I love the simplicity of EventBop. The user interface is so clean and intuitive!",
-            imageUrl: "https://randomuser.me/api/portraits/thumb/women/14.jpg",
+            imageUrl: janeSmithImg
         },
         {
             id: 3,
             name: "Mary Johnson",
             review: "EventBop has made it so easy to find and attend interesting events in my city. Highly recommended!",
-            imageUrl: "https://randomuser.me/api/portraits/thumb/women/63.jpg",
+            imageUrl: maryJohnsonImg
         },
     ];
 

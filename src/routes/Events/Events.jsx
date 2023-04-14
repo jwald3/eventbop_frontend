@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header';
 import styles from './Events.module.scss';
 import CategoryEvents from '../../components/CategoryEvents/CategoryEvents'
 import Footer from '../../components/Footer/Footer';
+import { useEffect } from 'react';
 
 export async function getEvents() {
   const response = await axios.get(`${process.env.REACT_APP_API_URL}/events`);
@@ -17,6 +18,10 @@ export async function loader() {
 
 const Events = () => {
     const { events } = useLoaderData();
+
+    useEffect(() => {
+        document.title = "EventBop — All Events"
+    }, [])
 
     return (
          <div>

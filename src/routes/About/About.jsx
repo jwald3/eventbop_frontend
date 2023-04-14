@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './About.module.scss';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
 const About = () => {
+    useEffect(() => {
+        document.title = `EventBop — About Us` 
+    }, [])
+
     return (
         <div className={styles.aboutContainer}>
             <Header />
