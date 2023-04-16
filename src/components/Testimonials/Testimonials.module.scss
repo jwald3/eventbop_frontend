@@ -1,21 +1,44 @@
 @import "../../assets/styles/variables";
 
 .testimonialsContainer {
-    padding: 2rem;
     background-color: $appBg;
     color: #b8c0cd;
     text-align: center;
+    margin: 3rem auto;
 }
 
 .testimonialsTitle {
     font-size: 2rem;
-    margin-bottom: 3%;
+    margin-bottom: 1rem;
     color: $text;
 }
 
 .testimonialsGrid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 3%;
+}
+
+@media (max-width: $mobileBreakpoint) {
+    .testimonialsContainer {
+        background-color: $appBg;
+        color: #b8c0cd;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .testimonialsTitle {
+        font-size: 2rem;
+        margin: 2rem auto;
+        color: $text;
+    }
+
+    .testimonialsGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        justify-content: center;
+    }
 }
