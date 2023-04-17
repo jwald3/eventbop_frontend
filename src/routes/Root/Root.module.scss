@@ -1,5 +1,12 @@
 @import "../../assets/styles/variables";
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .rootWrapper {
     display: flex;
     flex-direction: column;
@@ -8,8 +15,28 @@
     color: $subtitle;
     width: 100vw;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .space {
     height: 5rem;
+}
+
+@media (max-width: $mobileBreakpoint) {
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .rootWrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: $appBg;
+        color: $subtitle;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

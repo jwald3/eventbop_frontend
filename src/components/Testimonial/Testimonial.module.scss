@@ -2,12 +2,15 @@
 
 .testimonialCard {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     padding: 1rem;
     background-color: $primary;
     border-radius: 5px;
     margin: 0 auto;
     box-sizing: border-box; // Add this line
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .testimonialProfileImage {
@@ -19,14 +22,14 @@
 }
 
 .testimonialReview {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-style: italic;
     margin: 1rem 0;
     color: $subtitle;
 }
 
 .testimonial-name {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: $text;
 }

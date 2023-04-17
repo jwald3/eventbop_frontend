@@ -46,3 +46,26 @@ a {
 //         color: $header-bg; // Change the text color on hover.
 //     }
 // }
+
+@media (max-width: $mobileBreakpoint) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .leftSection,
+    .rightSection {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .rightSection {
+        padding: 0 1rem;
+    }
+}
